@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body{
+            background-image: url('https://t4.ftcdn.net/jpg/04/29/97/39/360_F_429973962_6vMeg6RYgfFvKvBy6A2r8WlpOvFX9746.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #form-group{
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form id="login-form" onsubmit="event.preventDefault(); handleLogin();">
+        <h2>Login to Your Account</h2>
+        <div class="form-group">
+            Email:<input type="email" id="email" name="email" required><br><br>
+        </div>
+        <div class="form-group">
+            Password:<input type="password" id="password" name="password" required><br>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember Me</label>
+        </div>
+        <button type="submit" onclick=" window.location.href = 'webpage.html'; ">Login</button>
+        <p>Don't have an account? <a href="signup.html">Create one now</a></p>
+        <p>Forgot your password? <a href="#">Reset it here</a></p>
+    </form></center>
+</body>
+</html>
+ login.html
